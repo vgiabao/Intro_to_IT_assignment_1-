@@ -116,6 +116,7 @@ h2 {
     padding: 20px;
     border-radius: 5px;
     max-height: 80vh;
+    overflow-y: auto;
 }
 
 .close {
@@ -124,12 +125,14 @@ h2 {
     font-weight: bold;
     top: 8px;
     right: 18px;
+    transition: 0.1s ease-in-out 0.1s;
 }
 
 .close:hover,
 .close:focus {
     color: #000;
     cursor: pointer;
+    font-size: xx-large;
 }
 
 .giftContainer {
@@ -138,8 +141,6 @@ h2 {
     justify-content: center;
     margin-top: 5%;
     width: auto;
-    transition: opacity 1s ease-out;
-    opacity: 0;
 }
 
 img {
@@ -187,6 +188,26 @@ img {
         font-size: 1.5rem;
         color: chartreuse;
     }
+}
+
+#guidanceCarousel{
+    display: none;
+
+}
+
+.talk-bubble{
+    display: inline-block;
+    background-color: lightyellow;
+    z-index: 1;
+    border-radius: 5px;
+    width: 10rem;
+    padding: 1%;
+    height: 6rem;
+}
+.talkText{
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
 }
 
 @media (max-width: 450px) {

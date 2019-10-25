@@ -71,14 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
         close.setAttribute('id', 'close' + box);
         close.innerHTML = 'OK';
         // close modal when click outside or the close area
-        close.addEventListener('click', ()=>{
+        close.addEventListener('click', () => {
             modalBox.style.display = 'none'
         });
-        window.addEventListener("click", function(event) {
+        window.addEventListener("click", function (event) {
             if (event.target === modalBox) {
                 modalBox.style.display = "none";
-            }});
-        if (modalBox != null){
+            }
+        });
+        if (modalBox != null) {
             modalContent.appendChild(close)
         }
         if (openBox != null) {
@@ -91,13 +92,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     //make the bee move regularly
-
-
     let elem = document.getElementById('beeRight');
     let pos = 0;
     let angle = 0;
     let direction = null;
     let id = setInterval(frame, 10);
+    let guidanceBar = document.getElementById('guidanceCarousel');
 
     function directMovement(currentDirection) {
         if (currentDirection === 'left to right') {
@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function frame() {
+
         if (pos >= 87) {
             // clearInterval(id);
             elem.src = 'img/beeLeft.png';
@@ -126,11 +127,67 @@ document.addEventListener("DOMContentLoaded", function () {
         directMovement(direction)
     }
 
+    let beeGuidance = document.getElementById('beeGuidance');
+    let clickTime = 0;
+    beeGuidance.addEventListener('click', () => {
+        clickTime += 1;
+        if (clickTime % 2 === 1) {
+            console.log(clickTime)
+            guidanceBar.setAttribute('style', "position:absolute; display:flex;top:" + (parseInt(elem.style.top) - 10 + '%;').toString() + "left:" +
+                (parseInt(elem.style.left) - 5).toString()
+                + '%;flex-direction: column; align-items:flex-end');
+            clearInterval(id);
+        } else {
+            guidanceBar.style.display = 'none';
+            id = setInterval(frame, 10);
+        }
+    });
+    // switch bee guidance
+    let index = 1;
+    let nextButton = document.getElementById('nextButton');
+    let backButton = document.getElementById('backButton');
+    let movementBar = document.getElementById('movement-bar');
+    nextButton.addEventListener('click', () => {
+        let guidance = document.getElementById('guidance' + index);
+        index += 1;
+        if (index <= 3) {
+            guidance.style.display = 'none';
+            let nextGuidance = document.getElementById('guidance' + index);
+            nextGuidance.style.display = 'inline-block';
+        } else {
+            nextButton.style.display = 'none';
+            let okay = document.createElement('button');
+            okay.innerHTML = 'OK';
+            okay.setAttribute('style', 'background-color:skyblue; color:white; display:inline-block; border-radius:5px; border:0; margin-left:20px');
+            movementBar.appendChild(okay);
+            okay.addEventListener('click', () => {
+                    index = 1;
+                    guidance.style.display = 'none';
+                    document.getElementById('guidance1').style.display = 'inline-block';
+                    guidanceBar.style.display = 'none';
+                    okay.style.display = 'none';
+                    nextButton.style.display = 'block';
+                    clickTime += 1;
+                    id = setInterval(frame, 10);
+                }
+            );
+
+        }
+    });
+    backButton.addEventListener('click', () => {
+        if (index > 1) {
+            let currentGuidance = document.getElementById('guidance' + index);
+            currentGuidance.style.display = 'none';
+            index -= 1;
+            let previousGuidance = document.getElementById('guidance' + index);
+            previousGuidance.style.display = 'inline-block'
+        }
+    });
     //change color of contact side to get more attention!
     let contact = document.getElementById('contactId');
     let count = 1;
-    let beeGuidance = document.getElementById('beeGuidance');
-    console.log(beeGuidance);
+
+
     function timeout() {
         setTimeout(function () {
             modifyColor(contact);
@@ -139,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function () {
             timeout()
         }, 1000)
     }
+
     timeout();
 });
 
