@@ -1,230 +1,305 @@
 .nav-header {
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: firebrick;
-    position: fixed;
-    height: 60px;
-    align-items: center;
-    font-family: "Agency FB", monospace;
-    overflow: visible;
-    border-bottom: 2px solid deepskyblue;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: firebrick;
+  position: fixed;
+  height: 60px;
+  align-items: center;
+  font-family: "Agency FB", monospace;
+  overflow: visible;
+  border-bottom: 2px solid deepskyblue;
 }
 
 #welcome-section {
-    height: 100vh;
-    background-color: darkslategray;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  height: 100vh;
+  background-color: darkslategray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.bee, #beeGuidance {
-    background: -webkit-linear-gradient(black, yellow, black, yellow, black, yellow, black, yellow, black, yellow, yellow, black, yellow, black, yellow, black, yellow, black, yellow, black, yellow, black, yellow, black);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.bee,
+#beeGuidance {
+  background: -webkit-linear-gradient(
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black,
+    yellow,
+    black
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #beeGuidance {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav-item {
-    color: white;
-    font-size: 1.75rem;
-    transition: 1s ease;
+  color: white;
+  font-size: 1.75rem;
+  transition: 1s ease;
 }
 
 .nav-item:hover {
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: chartreuse;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: chartreuse;
 }
 
 #contact {
-    color: Blue;
+  color: Blue;
 }
 
 .boost-motivation-box {
-    background-color: #303841;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40vh;
-    color: white;
+  background-color: #303841;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  color: white;
 }
 
 #profile-link {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-    flex-direction: row;
-
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  flex-direction: row;
 }
 
 .link-features {
-    font-size: 1.8rem !important;
-    margin-top: 20px !important;
-    transition: 0.1s ease-out 0.3s;
+  font-size: 1.8rem !important;
+  margin-top: 20px !important;
+  transition: 0.1s ease-out 0.3s;
 }
 
 .link-features:hover {
-    transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 #newMap {
-    width: 100%;
-    max-height: 20vh;
-    padding: 0;
-    margin: 10px 10px 0 0;
+  width: 100%;
+  max-height: 20vh;
+  padding: 0;
+  margin: 10px 10px 0 0;
 }
 h1,
 p,
 h3,
 h4,
 h2 {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .myModal {
-    display: none;
-    position: fixed;
-    padding-top: 30px;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    justify-content: center;
+  display: none;
+  position: fixed;
+  padding-top: 30px;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
 }
 
 .modal-content {
-    position: relative;
-    max-width: 80%;
-    background-color: #fefefe;
-    padding: 20px;
-    border-radius: 5px;
-    max-height: 80vh;
-    overflow-y: auto;
+  position: relative;
+  max-width: 90%;
+  background-color: #fefefe;
+  padding: 5px;
+  border-radius: 5px;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal-layout {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.modal-list {
+  width: 20%;
+  border-top: 2px solid black;
+  text-align: center;
+  position: fixed;
+  display: block;
+  height: 79vh;
+  border-right: 2px black solid;
+}
+.modal-list-item {
+  color: blue;
+  border-bottom: 2px solid black;
+}
+.modal-list-content {
+  margin-left: 22.5%;
+  padding-left: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  overflow-y: auto;
+  border-top: 2px black solid;
 }
 
 .close {
-    color: deepskyblue;
-    position: absolute;
-    font-weight: bold;
-    top: 8px;
-    right: 18px;
-    transition: 0.1s ease-in-out 0.1s;
+  color: deepskyblue;
+  position: absolute;
+  font-weight: bold;
+  top: 8px;
+  right: 18px;
+  transition: 0.1s ease-in-out 0.1s;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    cursor: pointer;
-    font-size: xx-large;
+  color: #000;
+  cursor: pointer;
+  font-size: xx-large;
 }
 
 .giftContainer {
-    display: none;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 5%;
-    width: auto;
+  display: none;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 5%;
+  width: auto;
 }
 
 img {
-    margin: 10px;
-    max-width: 60%;
-    height: auto;
-    width: auto;
+  margin: 10px;
+  max-width: 30%;
+  height: auto;
+  width: auto;
 }
 
 #drawGifts {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal-first-content,
 .model-second-content {
-    display: flex;
-    flex-direction: column;
-    max-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  max-height: 10vh;
+  margin-bottom: 0;
 }
 
 .childrenContent {
-    margin-left: 7px;
+  margin-left: 7px;
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .theBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bigTitle {
+  border-bottom: 1px solid black;
 }
 
 @media (max-width: 740px) and (min-width: 450px) {
-    .link-features {
-        font-size: 1em !important;
-    }
+  .link-features {
+    font-size: 1em !important;
+  }
 
-    .nav-item {
-        font-size: 1rem;
-        transition: 1s ease;
+  .nav-item {
+    font-size: 1.75rem;
+    transition: 1s ease;
+    color: white;
+    cursor: pointer;
+  }
 
-    }
-
-    .nav-item:hover {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: chartreuse;
-    }
+  .nav-item:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: chartreuse;
+  }
 }
 
-#guidanceCarousel{
-    display: none;
-
+#guidanceCarousel {
+  display: none;
 }
 
-.talk-bubble{
-    display: inline-block;
-    background-color: lightyellow;
-    z-index: 1;
-    border-radius: 5px;
-    width: 10rem;
-    padding: 1%;
-    height: 6rem;
+.talk-bubble {
+  display: inline-block;
+  background-color: lightyellow;
+  z-index: 1;
+  border-radius: 5px;
+  width: 10rem;
+  padding: 1%;
+  height: 6rem;
 }
-.talkText{
-    width: 10rem;
-    height: 5rem;
-    text-align: center;
+.talkText {
+  width: 10rem;
+  height: 5rem;
+  text-align: center;
 }
 
 @media (max-width: 450px) {
-    #profile-link {
-        flex-direction: column;
-        align-items: center;
-    }
+  #profile-link {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .link-features {
-        font-size: 1.5em !important;
-    }
+  .link-features {
+    font-size: 1.5em !important;
+  }
 
-    .nav-item {
-        font-size: 0.85em !important;
-    }
+  .nav-item {
+    font-size: 0.85em !important;
+  }
 
-    .nav-item {
-        font-size: 0.5rem !important;
-    }
+  .nav-item {
+    font-size: 0.5rem !important;
+  }
 }
