@@ -1,13 +1,13 @@
 modifyColor = function(item) {
   let current_color = item.style.color;
   if (current_color === "blue") {
-    item.setAttribute("style", "color:black");
+    item.setAttribute("style", "color:black; font-size:2.5rem");
   } else if (current_color === "black") {
-    item.setAttribute("style", "color:yellow");
-  } else if (current_color === "yellow") {
-    item.setAttribute("style", "color:white");
-  } else if (current_color === "white") {
-    item.setAttribute("style", "color:Green");
+    item.setAttribute("style", "color:yellow; font-size:2rem");
+  } else if (current_color === "yellow " ) {
+    item.setAttribute("style", "color:skyblue;font-size:2.5rem");
+  } else if (current_color === "skyblue") {
+    item.setAttribute("style", "color:Green; font-size:2rem");
   } else {
     item.setAttribute("style", "color:blue");
   }
@@ -203,11 +203,13 @@ document.addEventListener("DOMContentLoaded", function() {
   //change color of contact side to get more attention!
   let contact = document.getElementById("contactId");
   let count = 1;
-
+  let job = document.getElementById('myJob');
+  console.log(job);
   function timeout() {
     setTimeout(function() {
       modifyColor(contact);
       modifyBeeTextColor(beeGuidance, count);
+      modifyColor(job);
       count += 1;
       timeout();
     }, 1000);

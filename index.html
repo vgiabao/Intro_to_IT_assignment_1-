@@ -1,300 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Assignment 1</title>
-    <link rel="styleSheet" href="./css/main.css" />
+    <link rel="styleSheet" href="./css/main.css"/>
     <script src="./js/main.js"></script>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  </head>
+</head>
 
-  <body>
-    <nav id="navigation" class="nav-header">
-      <a style="color: white; cursor: pointer" class="nav-item" id="info0">
+<body>
+<nav id="navigation" class="nav-header">
+    <a style="color: white; cursor: pointer" class="nav-item" id="info0">
         My Basic Detail</a
-      >
-      <a id="info1" class="nav-item" style="color: white; cursor: pointer">
-        My Interest
-      </a>
-      <a id="info2" class="nav-item" style="color: white; cursor: pointer">
-        My Ideal Job
-      </a>
-      <a id="info3" class="nav-item" style="color: white; cursor: pointer"
-        >My Profile</a
-      >
-      <a id="info4" style="color: white; cursor: pointer" class="nav-item">
-        Ideal Project
-      </a>
-      <a id="contactId" href="#motivation" class="nav-item"> Contact Me </a>
-    </nav>
-    <img
-      src="img/beeRight.png"
-      alt="beeRight"
-      id="beeRight"
-      style="position: absolute;top: 20%;left: 10%;"
-    />
-    <div
-      id="guidanceCarousel"
-      style="position: absolute;top: 16%;left: 10%; padding:3rem;"
     >
-      <div class="talk-bubble" id="guidance1">
+    <a id="info1" class="nav-item" style="color: white; cursor: pointer">
+        My Profile
+    </a>
+    <a id="info2" class="nav-item" style="color: white; cursor: pointer">
+        My Ideal Job
+    </a>
+    <a id="info3" class="nav-item" style="color: white; cursor: pointer"
+    >My Profile</a
+    >
+    <a id="info4" style="color: white; cursor: pointer" class="nav-item">
+        Ideal Project
+    </a>
+    <a id="contactId" href="#motivation" class="nav-item"> Contact Me </a>
+</nav>
+<img
+        src="img/beeRight.png"
+        alt="beeRight"
+        id="beeRight"
+        style="position: absolute;top: 20%;left: 10%;"
+/>
+<div
+        id="guidanceCarousel"
+        style="position: absolute;top: 16%;left: 10%; padding:3rem;"
+>
+    <div class="talk-bubble" id="guidance1">
         <div class="talkText">
-          <p>You can choose directly any item in navigation bar</p>
+            <p>You can choose directly any item in navigation bar</p>
         </div>
-      </div>
-      <div class="talk-bubble" id="guidance2" style="display: none">
-        <div class="talkText">
-          <p>
-            You can also choose 'about me' button then choose any gifts bellow
-          </p>
-        </div>
-      </div>
-      <div class="talk-bubble" id="guidance3" style="display: none">
-        <div class="talkText"><p>Have a nice day, Bee!</p></div>
-      </div>
-      <div
-        style="max-width: 80%; display: flex; flex-direction: row; align-items: center"
-        id="movement-bar"
-      >
-        <i
-          id="backButton"
-          style="margin: 3px"
-          class="fa fa-arrow-circle-left"
-        ></i>
-        <i
-          id="nextButton"
-          style="margin: 3px"
-          class="fa fa-arrow-circle-right"
-        ></i>
-      </div>
     </div>
-    <div id="welcome-section">
-      <h1>Hello! I am Bao - I Will Be A Web Developer</h1>
-      <h1 class="bee">:D You Can Call Me Bee :D</h1>
-      <h3 id="beeGuidance">Click If You Need Support From Bee</h3>
-      <h4>
+    <div class="talk-bubble" id="guidance2" style="display: none">
+        <div class="talkText">
+            <p>
+                You can also choose 'about me' button then choose any gifts bellow
+            </p>
+        </div>
+    </div>
+    <div class="talk-bubble" id="guidance3" style="display: none">
+        <div class="talkText"><p>Have a nice day, Bee!</p></div>
+    </div>
+    <div
+            style="max-width: 80%; display: flex; flex-direction: row; align-items: center"
+            id="movement-bar"
+    >
+        <i
+                id="backButton"
+                style="margin: 3px"
+                class="fa fa-arrow-circle-left"
+        ></i>
+        <i
+                id="nextButton"
+                style="margin: 3px"
+                class="fa fa-arrow-circle-right"
+        ></i>
+    </div>
+</div>
+<div id="welcome-section">
+    <h1>Hello! I am Bao - I Will Be A Web Developer</h1>
+    <h1 class="bee">:D You Can Call Me Bee :D</h1>
+    <h3 id="beeGuidance">Click If You Need Support From Bee</h3>
+    <h4>
         Do you wanna know more
         <a id="drawGifts" style="color:royalblue">about me...</a>
-      </h4>
-      <div class="giftContainer" style="display: none">
-        <img src="img/itGift.png" id="gift0" alt="gift 0" />
-        <img src="img/itGift.png" id="gift1" alt="gift 1" />
-        <img src="img/itGift.png" id="gift2" alt="gift 2" />
-        <img src="img/itGift.png" id="gift3" alt="gift 3" />
-        <img src="img/itGift.png" id="gift4" alt="gift 4" />
-      </div>
+    </h4>
+    <div class="giftContainer" style="display: none">
+        <img src="img/itGift.png" id="gift0" alt="gift 0"/>
+        <img src="img/itGift.png" id="gift1" alt="gift 1"/>
+        <img src="img/itGift.png" id="gift2" alt="gift 2"/>
+        <img src="img/itGift.png" id="gift3" alt="gift 3"/>
+        <img src="img/itGift.png" id="gift4" alt="gift 4"/>
     </div>
-    <div id="motivation" class="boost-motivation-box">
-      <div style="text-align: center">
+</div>
+<div id="motivation" class="boost-motivation-box">
+    <div style="text-align: center">
         <h1 style="font-family: 'Raceway', sans-serif;">
-          Let's Work Together...
+            Let's Work Together...
         </h1>
         <h4 style="font-family: 'Poppins', sans-serif;">
-          How do you take your coffee?
+            How do you take your coffee?
         </h4>
-      </div>
-      <div id="profile-link">
+    </div>
+    <div id="profile-link">
         <a href="https://www.facebook.com/vogia.bao.12">
-          <i class="fa fa-facebook-official link-features" aria-hidden="true">
-            Facebook</i
-          >
+            <i class="fa fa-facebook-official link-features" aria-hidden="true">
+                Facebook</i
+            >
         </a>
         <a href="https://github.com/vgiabao">
-          <i class="fa fa-github link-features" aria-hidden="true"> GitHub</i>
+            <i class="fa fa-github link-features" aria-hidden="true"> GitHub</i>
         </a>
         <a
-          href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=act&pli=1"
+                href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=act&pli=1"
         >
-          <i class="fa fa-envelope-o link-features" aria-hidden="true">
-            G-mail</i
-          >
+            <i class="fa fa-envelope-o link-features" aria-hidden="true">
+                G-mail</i
+            >
         </a>
         <a href="tel:0707738003">
-          <i class="fa fa-mobile link-features" aria-hidden="true"> Call me</i>
+            <i class="fa fa-mobile link-features" aria-hidden="true"> Call me</i>
         </a>
-      </div>
     </div>
+</div>
 
-    <div class="myModal" id="modal0">
-      <div class="modal-content" id="modal-content0">
-        <div class="theBox">
-          <h5 class="modal-first-content">Name</h5>
-          <p class="modal-second-content">
-            Vo Gia Bao - Bee ( a kind of insect)
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Student ID Number:</h5>
-          <p class="modal-second-content">s3823477</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Email Address:</h5>
-          <p class="modal-second-content">
-            s3823477@rmit.edu.vn or vogiabao292@gmail.com
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Nationality:</h5>
-          <p class="modal-second-content">Viet Nam</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Spoken Language:</h5>
-          <p class="modal-second-content">Vietnamese and English</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Fact:</h5>
-          <p class="modal-second-content">
-            I am feeding a dog. Her breed is Shih Tzu. I love she very much :D.
-            We have been companions for a long time :D
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="myModal" id="modal1">
-      <div class="modal-content" id="modal-content1">
-        <div class="theBox">
-          <h5 class="modal-first-content">Name</h5>
-          <p class="modal-second-content">
-            Vo Gia Bao - Bee ( a kind of insect)
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Student ID Number:</h5>
-          <p class="modal-second-content">s3823477</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Email Address:</h5>
-          <p class="modal-second-content">
-            s3823477@rmit.edu.vn or vogiabao292@gmail.com
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Nationality:</h5>
-          <p class="modal-second-content">Viet Nam</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Spoken Language:</h5>
-          <p class="modal-second-content">Vietnamese and English</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Fact:</h5>
-          <p class="modal-second-content">
-            I am feeding a dog. Her breed is Shih Tzu. I love she very much :D.
-            We have been companions for a long time :D
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="myModal" id="modal2">
-      <div class="modal-content" id="modal-content2">
-        <div class="theBox">
-          <h5 class="modal-first-content">Name</h5>
-          <p class="modal-second-content">
-            Vo Gia Bao - Bee ( a kind of insect)
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Student ID Number:</h5>
-          <p class="modal-second-content">s3823477</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Email Address:</h5>
-          <p class="modal-second-content">
-            s3823477@rmit.edu.vn or vogiabao292@gmail.com
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Nationality:</h5>
-          <p class="modal-second-content">Viet Nam</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Spoken Language:</h5>
-          <p class="modal-second-content">Vietnamese and English</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Fact:</h5>
-          <p class="modal-second-content">
-            I am feeding a dog. Her breed is Shih Tzu. I love she very much :D.
-            We have been companions for a long time :D
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="myModal" id="modal3">
-      <div class="modal-content" id="modal-content3">
-        <div class="theBox">
-          <h5 class="modal-first-content">Name</h5>
-          <p class="modal-second-content">
-            Vo Gia Bao - Bee ( a kind of insect)
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Student ID Number:</h5>
-          <p class="modal-second-content">s3823477</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Email Address:</h5>
-          <p class="modal-second-content">
-            s3823477@rmit.edu.vn or vogiabao292@gmail.com
-          </p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Nationality:</h5>
-          <p class="modal-second-content">Viet Nam</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Spoken Language:</h5>
-          <p class="modal-second-content">Vietnamese and English</p>
-        </div>
-        <div class="theBox">
-          <h5 class="modal-first-content">Fact:</h5>
-          <p class="modal-second-content">
-            I am feeding a dog. Her breed is Shih Tzu. I love she very much :D.
-            We have been companions for a long time :D
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="myModal" id="modal4">
-      <div class="modal-content" id="modal-content4">
-        <div class="modal-layout">
-          <div class="modal-list">
-            <h5 class="modal-list-item">Basic Detail</h5>
-            <h5 class="modal-list-item">Facts</h5>
-          </div>
-          <div class="modal-list-content">
-            <div id="basic-information"> 
-              <h1>
-                Basic Information:
-              </h1>
-              <div>
-              <div class="childrenContent">
-                  <h3 class="modal-first-content"> My Name:</h3>
-                  <p class='modal-second-content'>Vo Gia Bao - Bee ( a kind of insect)</p>
-              </div>
-              <p>s3823477</p>
-              <p>s3823477@rmit.edu.vn or vogiabao292@gmail.com</p>
-              <p>Viet Nam</p>
-              <p>Vietnamese and English</p>
-              <p>
-                I am feeding a dog. Her breed is Shih Tzu. I love she very much
-                :D. We have been companions for a long time :D
-              </p>
+<div class="myModal" id="modal0">
+    <div class="modal-content" id="modal-content0">
+        <div>
+            <div class='modalMainContent'>
+                <div class='modalColumn1'>
+                    <h2> Contact Information</h2>
+                    <img class='introImage' style='max-width: none; width: 60%;'
+                         src='https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.15752-9/74573047_680689849006888_8701623236552556544_n.jpg?_nc_cat=102&_nc_oc=AQlXsRFm9r39u-7XlWjygryQMegyrG8rEAQPQL5gHGn4oQ8V4HQH62KiEsmKwLb6HXg&_nc_ht=scontent.fsgn2-4.fna&oh=e0313be3c86f664c8a1ba4d7969d1425&oe=5E618FB8'>
+                    <div>
+                        <h5> My Full Name: </h5>
+                        <p> Vo Gia Bao</p>
+                        <h5> My Birthday: </h5>
+                        <p> 29/02/2000 </p>
+                        <h5> Student ID: </h5>
+                        <p> s3823477 </p>
+                        <h5> My Email: </h5>
+                        <p> s3823477@rmit.edu.vn</p>
+                        <p> vogiabao292@gmail.com</p>
+                        <h5> Spoken Language: </h5>
+                        <p> English and Vietnamese</p>
+                        <h5> Nationality: </h5>
+                        <p> Viet Nam</p>
+
+
+                    </div>
+                </div>
+                <div class='modalColumn2'>
+                    <h2> My Facts</h2>
+                    <div>
+                        <h4> I have a dog. Her name is Shark. Her breed is Shih Tzu. I love her very much :D. </h4>
+                        <img class='modal-image'
+                             src='https://www.publicdomainpictures.net/pictures/60000/nahled/shih-tzu-dog-13764063864D6.jpg'>
+                    </div>
+                    <div>
+                        <h4> I like to cook. Although I usually come back home after 9:00 p.m, I cook for me and my
+                            dog. </h4>
+                        <img class='modal-image'
+                             src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUTEhIWFRUVFhUVFhUVFRUVFxUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi4lHSUtLS0tLS0tLS8tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS4vLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA/EAABAwIEAwUGBAQGAQUAAAABAAIRAwQFEiExBkFREyJhcYEHMpGhscFCUnLRFBYjYiSCkuHw8cIVM0NTc//EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EACoRAAICAgIBAwMEAwEAAAAAAAABAhEDIRIxBCJBURMy8CNhgZEFFMFx/9oADAMBAAIRAxEAPwDF08Mc2rnzy12vmjxW1AAO6l2z9C08hp4hKpUyWlrtRuPNeSpbtnQxHBuLdjVDSe676rTcTcUutXhpoZmuALXB8Zhz0jcLAttyKg1jnJ6rY0qYvrU0iJr0jmYOZjdvqPnC6seTjv2ZNx3sTZ8d0nb0Xj1af2Wlwnie3cROYeY/Zc4s8M7wGo9OfKfmrywtSw7Sq/UadM6o+NCcbijpF1xHTyRTMnpEKmbeucczuarLO2O59FdYNbBzzm5bBUUrIzxcUWOGWmaHv93p1Uy7vGjZMYlVLBB08lnLi+JJTkCVdX5JPRV1M/uoVW4JdA9VLpaq0ERmyUyokv1TWTXQqTSZoqWSIld3VV1WnmIDQSSdhzVrc0JCrm1chBG42PQopgZFxixfSIzsLZ6qoezKrzE719czUcXEDRUVyDJSsKG64Bb4qgvbc6kGVemIVdcdBzSMdGe1Cjuf1Vg9mpUKrupsqhkuCMVErIkkBAIRqIoKPOEkvKxhRShqmUpiwRzKjBQlNucSsAczIF46JoMKUKaNmoWCEZpHzTUBLZWhYwktQT/8T4ILaNbNW0uqNYQ4Nc3cdVPo1HdNFQWdR0zEEHZXtKt8+XivFnp9nT7ETFA3cjXr0SMCxY0bhlQEyDDuhCk3gDhtrOvkqS9oZe+E+J+zM+jq93gxqv7e3cwNqd4gzo4jvbDn9ypNLCKwGvZyOhOvyWc9mnEgcf4d539w+K6I2oJjmvQx8cn3doRZMmL7WYx989j8rqcEeKs7SqXHMBlPid1cYhhzKw2hw2Kqn2zqejh6jZP9JRehn5U5qmLua7qgA6KLWogNUi2k7BWFDDAdX7dE6RBsp7uxpNoioPeJ3UJjloeIqLRTa1uglUbKQ6KxzsFKgeqfpVIkFOUwEmq2dEwBovlRa1rJmFOokBO1HiFgFP8Awmmg1Vfd2mvhHzV8+sByVViku91EBn7qlHkqoxO6trm1cRBKqhQyuM8gVNlEUdzVGZ0dT9VXOqGVOeN1He3VTZVDBlFkT0IQsGxrIgWpwpJQMNwjYUTkSwRZ1R5gEgv6I20+qwByj3jGgT/YRqSB6JhkDZSeyc9sjXwTIDGM3kfkgCw6EEFN1aZG4hEHzo7480LMSP4bo5seaCYDPEIIm2Wn8QRDvQqytLjXU6FUTHaEFKZVOXxafkuCeGzoUjWsBcNNeqFaylsKBhF+3QnfaFpKVmTq3bceK8+ScJD9mRsCbauHCdDou54Retr0W1RvAzD6FcqxPDs3eDSCPDmtB7O8XyPNF5kO09OYXd4+VSd+5LJGkdBZVCbva4IUOq4QSx2YBxB0gjpI6HqorHEnVdt2Ta4j1OtlUgXJKhuan6DUyVCt2N37y4jwUQsUp/vJL2SVVEmRg2EmtVTladVHqPTCjaVWfpomQCUqNgiAZrFMUGknVTajExXMNgcuaxiDiAbIk6+HJZrFNAeuytK5zE667qmxN2kxpCVjRM8Qoz0/Uco0qRUEIoSkRWCJSYSnFEAsYQ5IDSdgnSJTlKk5xDWAlx0DRqSgEQ2gB7zgPLUp6mae2Vx8Stxwz7NnVGipcvyz+Bu/+Yqyxr2bsDf6Ly0xzMgpXkURljcjBfwDIksMdWmfkgyxA1pVPupVe2ubUkPZmaNyEzVDKg7SkcrhuOvmFaLjJWiMlKLpjDriO5Wb/mGyhXlrl1GrTsVObWFQFjxDlCpVMssdsfkVpGjohoKY6iESSiljtxQLXEFFSpyVpsZtQZfEj8Q+4Wce3I7Q6eH0UX8DRd7Ba1MjwfFdCwmqTSBafEeHguetjc6rTcPXoIyjcLg86DceSL4vg2VO7pkAPbq4wdNAeqq8YsOweyrT0Myp9vXokQ/faPHrKv2Np1KJaRJG06rzMGZqe9FZR0S8FFO4a2syoWmP6jSGlriNw4Hy6qwvcLEZqeo00BzESJ23+Cx/Dl0Le5NKrHZ1e6TyBPun7LWWdt/DVXc6ZLdMxkSdIn0HwXqqc1+pFqvdfuIql6JfwRn2rmOAd00I2KMuVrXbb1XZw7s9e8079JE/7p6jgLnCWOa5vUyD8F2YfJx5HxUtnPlwzh2tFAWpIBlab+W3/mb8/wBkf8sv/O35rqtHM0zKXABCito/BbF/Czvzt+BTLuEqnKo34FNaBTMqWgbCE09slap3CNX87D6kfZMu4Sr9WH/Mf2RtApmcrNUas3SNloK/DF0NmT5Ob+6rrnBLlvvUn+eUn6I2BmDxKm5jy4bcv2VJi15mGggc/ErbX9gS17XAg+Ij6rDXtoQYIO+iSQ0WVD36JgqwqWZccrGlx6NBcfgArG34JxGoAWWdWD+cNp/KoQpsqjPBArZUPZfibt6TGfrqs1/0ZlGxH2eYlSYXmgHtG/ZPa8x1yDvH0BQsamZSECpuE4TXuX9nQpOe6YMCGt/U7Zq6dw37KGNh94/Od+zZoz1O7vkg5JGUWznfDvDle8flpNhs96oR3W/ufALtHC/B9C0Z3W5nn3nuEuP7DwWitMPp0mhlNoa0aAAQAl1XQFKU2y0YpEGraN1LZB8NAUmlVGUAievP5JZuFV17ksdyDXaT00QUrVGarZGxzCWuBgCFyLiaw/hqwcwQDrHLxC7G657gnoua+0AA5T0dHxCnjlWTRTIrhsyFaNHcjseh6JF0JGbnz/dIpvgFp23TjRoR5rtOPoQx8hBNNKCFho3xeOfNU2KYJUYBUNN7abjoXMc0TvAJEFd5tMPt6H/s0WNP5ol3+o6/NIxOg2vTdSqjM1wgjp0I6EIyx2TjOmedexMGE5hlVzHgifLqtFxHw1VtXkEB1NxlrhMGOXgfBZntTM/Jckk2nFo6otaaNPaXRJGYyZ+XVXlDGcjQI21BmJB2HosVTuREicw+nNW9vWBaN4ifivJz4Kd0dkJJ6LLFa8t7WdJALvE+C1uDYr/GUGh5/rW7mkgb1WDUH5A+iw1alHc1LHAcufLmiwm/NrWFRjiQ0wQebSdQn8d8NJ6f5/aBkjeze3QLjnzPZIABOtMmdXfq5T4rT4ZjtO1aRUa8kiRAkmGgnwjdR7F7LikC0Asc2Y2PXRU3EVCu2kW5y5hIdqZ9J6Ry8Cm8WUYyXLbV0xs9zi66+C9tuMHXJLKQLHNGbcNzDwOplTrPiOqNKrQdYnYkemhXKaT3CqzKdSQJ2EnST8VcWeOVmuAO7de/BzFrXTBjQ7x5+q9RS5RaT2ec407OxWlw2o0OafTmE8VhsFx6AakgzqW7AgxJB689lsrO8ZVaHsMg/EHofFPjnyW+wSVDpSUuUFUUQhmSikkLGEVWNcIc0OHRwB+qzuPcI4fUp1Hvtmy1jnTTLqZ7oJ/AR0WjISXNBBB1B0I6rApHPeHrmiykGNpta1gAAaSJ6udG5PUpy7xVrHjs5AcJIzE6g7iTpumcX4duKDnOoDPTPgXFomQC0EHSd1Q5H6uqPAPIFuQNHkZ+q55NpU+ztXFu10XjcXfIIOm5+CcoY9mJAPWfsqeyZUqy2iwvnYjRp8idCsfc4vVp1H0nMdSexxa5j4Dgd9frOoIIhJ6lsZuL0dewOoxwfDQ0zmMACS6ZJjc6fNTatQBYjhC9eKJqOkB8Bs7kNmXR0JPyVlXvieaSU0KoFzVvwFVV77MYlU15iOUEz5qmq4sSJ57eSm8jY6ikap9zGxVHjF932NDgJ116giFUuxd20qmxHEC6oI5D5owtsE6o0lXFDBBOoJEjZYXiu6zuAnxVlc3wa30/7WSvKxe4uKphh6rJ5J+mhhicpuhNMUmzsatZ2WmwuPgNvMrsRzMilBbCjwK7KM9ZrXc27x4II8JCfUidye5R6jykGumnVQnbFSEXTW1GllQBzTu1wkFYbFuAGvJNq8tP5HBzh6OGo9QVue1j8I9e8fnp8kmrdPOkx/z5KUkn2Uja6OTXPBt9S3oOPiwtf8gZHwUJtjXYYdSqjw7N4OvmF2G3BzSSSixTCqxL6tKZIbLQ73gANI6grlzQ9NxVnTilv1OjldCnVcIFGq4bd1j5J+CsrPhK+qiW27wD+cZD596FuLTiR7Mord06DXYxoNRrsrvD6rqlQubWyhxB7NwMbRLXcguSChZefJKzN8N0q9m7sK7dN2wQY6jQ+vxWxpmnXZ2b4iNCTEbzr6qtxTDHvrZ2uzFgncEGBsFAu6pGUg6O29NfuF5/lSeKblFV+bOrFGM41ZXcX8MttaQe2rnPJobs0zBLp8FnHX+odULg14EuDQQ2pEOkHl6810S9eS+dC3smh07OOoA89kwy1oOZAY0A7tjSVdeeov8Af/hGPiSl/wCf9MlSxOnbxTfUa9x2bTa8k9NhAMRpr8lpOGeKKbKrW9oGh0Zqb+4demaJieSpcV4Pp5xWacrQIc0cv0kbTsYVXh9jQrUy2o0DLLnup9o85Acpcc47rZ5k7+C9TxpvJBTOHNDhJxZ3YXCNty06dN/Bc54aYaQLbGtVqtYBnp1m90A9Dnhh8oHnur7A8RZmIOZpdoc2uvUn7q2XI4SiktPt/BOEVJPe0asVAeaOVDc1BtYhWEslkpJTRuAkF7ijRrG765axpcTsst2L7upqJaD+L3W+nMrRXOHCp75MdApNGkGiGgABHQu7Cw+zZSENGvM8z+wXPPbHhDC6jcgAOdNKp/cBBYT5d4eo6Lo7dTodt1yn2t4+2pVZQYZFOSY/Mdv+eKnl+1lMb9RVXGMzUIbo0QAPQfJHWxc8vJZZlaAST81HuMUYNS74LzuDbOznRb31+XHQ6KK6uQdFR1McbyEqJWxuodBA+qqsLJvIaCtWjUmPMqsucUpt27x6qiq1nOMlxKesMNq1jlpU3PPgNB5nYK0cKQjyAurxz99ui1PCvANe6AqVD2VI7c3uHgOQ805gnCZpPD7iJGoZuJ8StxhuM9mQD7v0XTCCSOeeTYqlwzStaZFvQaXkQXv1cfMlV9th1yJhrWzvlELodnVZVaC0hN1KQBVtEmjndbh6u4k590F0Ds2oIUgEBgJ+vkOqAqjl8U6QMpEwDAJ8tQPL9gozrYt1Go6j7qTLIeAlAtS6SavbttMdXcgpzairZWKbdIVS3UfG8bfTAbTImJPMRsqS8xCo47wOg2+Sq7y/ytyuaSY0P+68/P5T41BfydePBu5E9mJOIgta4k7Zc3vTrDtOXzCvsFcRo57oju91rgOukazG/gsRg9aqH52sdU0JLZ0jkD4SVf0ccqyDUa8n3W06I7MNHPO+MxG+3RbDwS2x8nK9Il4rjjaEODwSTByEEhvN3SPDmn760qPoMFP3g5rh5HQj4H5KBZYWGnPUjM92b3evJsmQArbFb/s2CNz/ANLyvKnGVOPsd2DHJ9kYvrBxpvGZzQD3dQQf2SrOv38rmubPl+6j4dxCG5gWyWk96NTA6q/zMqmiWvBLsuflkJmdOYACOL/Hua5CZPPcPR/RBxim803UhLs7TlMEfHkmKNhWo0XNcwPFVsOex0gFziSwmdIkxAjXqtKajBsZyyAfujDA6RHdeCOmsbx/zZdsf0ocY/b+dHBmyPJLlLszWE3DaDKoa0MEEhgJJ0E6iOcxudjKZGLFjx3C7MM/caSAPxHT3QNiqTD8XHaOJfJ1BboSCIgAHQ8+qtbSq41HVXO0IERoY5gHku1KMm2zndrRuMAxcPf2J5sFSkerNnN82n5HwVxUasJg943tmvc3KKbszRPeEiHR5jf/AGW9t8z2gublJ5TMa6bLphNN17k3F1Ymi3wTxKW2j6Ji5vaVP3nieg1KqIOZevwSK9VrBLyAFkMd9oNGlIaZd0Hed8BssT/M9e6rDMS2nO06nzPJLKaj2NGDl0bLifis5HtoaBrXFzvACSuCXeNueS6Jc4yXOMmSuh8U4g1ltX1iWFg8S8ZRHx+S5I5ykn9TbKyjw0h6vdvdu4qMTKCCeqEAgEaNnRYxLwmyNWqxgE5nD4Tqu84fYMptDWNDQByAC5TwrWZbzVcJdy8FbVfaBB0WsVm9xXDRUbpuFi7phaSDyVe/2guOnVQrTHDUcQ/mnjKhHGy+wXiR1CpBJy/RdGtb1tZgc0zK4tdN1Vpw3xA+3cAdWHcdEymBxOqFqCYtsWovaHBw1E7oKliEns9CCN/X1Cbpyzf3T8D+ylMxW3mCcpU2jXoO2cD6yp6ZXop7u5DRDRLj8vNVNSgXGXOE8+ZWsr4Zb1N3EeRhRhwvR3FQ+sfbRcObFllL2r22deLLjiv3Mq8MafdA8XGPgIQp21Kpq8thusN94zymBAWofwowme0bP6Qlfyq071W+jYPxlcmTxfIaaVF458XyQ8Io0m0XVMg7s6Ach16pbr+me6AIEbTHU6bFXNhggpTFUQRBaQIhOswK1H5fhp8FCPheVxS6+dh/2MNtmPxagS9r2HQ+6DyAjbwVfitjWrBjQw+JOgidSCug3OE2riC+odNgCAB8AkOtLQQC95A5ZyB8oWh/jMzk3JoovPhGPFHLbzBX27tBmDg4ANMmRuFZcK0nsiuHwCHjsyZcZgCfyzB3W6uG4cYzUmuy6idYPXU7pFPFLGlPZ0abSd4DRPnovSxePkjBxk1+f0cGTLGTtGfq3NeoC0tYwZw4Fnec4AzlnkNOSuK9vXdTb2TTnDpGkD3SNSdOYTlXjOi33Q0eQVdccefl+QVcmCEoqLZOM2ndGat/ZTchznuqNzuM7908+9zmVrrHhUsZFWpQaT+JrDmAjYS6PlzVJccXVnbA+Z0WbxTjF4kZwT0br8TsEVHGu9jXOXR0q2trO3cHlzqr27FxEDyaICYxXj6lTB7zW+Z+y4nfY7dVJ72UeG/xVZ2D3GXEk9Sj9SMVUUH6Un2zpWLe05z5FLM7x91v7lZjFccuXgOqOLWvmA3Qab+JHiqq2tI3KefaaySZ8TKjLK37lViiukItqIBzHnsOZR4hi5t4DWy497eIGwJ+fwR3F1Soe9JdEgAcupPILN3d06o8vdufgByA8EE7Kxx32FiWIVa57+w2aNgevifFQxSKkBLAVOdDf6ye7I3YoCipMIiFubGXjQQx2SdtqYkIyEqho5GLtpC5IRhFtI0tvgld9MZWSDsVXV+E7jfIuy8MMoutqQa5pOUTHWNVcDD2HkqNbPOT0efRwxXGpYVCqsLHRsQvRFbDG66LhvFtENu6gHVAZOyVhQdXaYElo1TFWmtj7IrVrhVJH4o9IR8dcOdk41qY7h94DkevkmQpiG13DQOKCJyCxjpd7asZNQvzHpp9FSmu/PmaS3pl0SDVLlK7OAkVgH6eL12j3589U8zHa/UfRVldyJldoRtmNC3GKh2qOHgRPwLZ+iebjLtO+Z8D9lU2zgQmrmiHPHVa2Y0L7yqRo5w9JUS5v6rTBe75apuhaEbEj1KmssnHckocglfUvyRq9/xUKpXJ/wDmK0VLBejyPIBOnh5jvel3mB+yN2a6Mo4jnVPyQaxh5vd5SfooPHVxXs6rG0Q1rHD3uzaTI8SFjLzGrp5h1d8dAco+DYSt0dEMMpq0b65qUqYmoGs//R4afRsyfgqK/wCLmN0ojMfzZcrR5TqfgFi5kyTPiUaRyOiHjx9y8uMddU9958tfoEihdUubwPQ/sqZJKSrKfSiujRi9pcnhMV8Rpj8U+DRPz2VEUQCKiheJbVcbdEU25f7jqfQbBRG4jW/+x3xlRQlBGkMkG8lxJJJJ3JMkoBqIVEsPW2Uio/IbWoykl6IlCh7SFEpJKSlQjQt2KRAaowjKaH3EvIf6bNt7MXO/ioE5chJ6biPuuuscVzf2R2oJq1P0t+U/ddNDVeXZ5CG6lTQ+S4PxhreVfMfRd2rbHyXCOLT/AIyr5/ZKPE23shMMqfr+wW8u2Ne0tcJB0WA9k7u5U/V9guhNZqsBnMMR4Iq9o7sz3J7vkgurCigjQLOO29xGiuGOloVJbgDeJVnb3ADdUozGLyoqO9ruGyt7m5Y47p7+XqjmB8Qw6BxGixihw7iF9MExICjN4ke6uHTAWir4OymDSeQC4d0rN3vDppNzh0hFOlRtNmxHFrGhP0OO6XMrm1QyN1AewygkHidrpcdUI99WNpxbReJDlwyjbOidVLtcRNPYrN60ZR+TpPH2MUqluW6F3Lw8Vye5qawrevfGo3Uqlfq4qd2z0MSccVfIbAlomoykZdKkEiRokQBIQgCjJRF0BoQRhJBRoF0KDQjcUiUcrUFTSXQYMIgUJQlajchYKMFJRgoUPyFAJbhokEpwCQnx9kvI1jaOoex8/wBKr+v/AMQukB4XP/ZbbllqX/neT6bfZbUlUfZ5Qu51B8lwbikf4ur+r7LutTY+S4TxOf8AF1f1fZAaPZtPZWP6dQ/3H6LfNuQFh/ZSyaT/ANRWzq0FkBk4XSJVuZEjbBSOPWbi6oXO0CmXNzDU1Rp7gbDmiuKBI0SFCgqXhD/VdOxDjFn/AKa2k2C9wDN9W7SY6rC22HtmX6aqTd4cHOGUiNws1tBNNa2QuGtdUMloTHFliGW5yqVgbwxsEp/iCyqVaRawDzKZiHJGBxKuLGzB3Cv8O4DrP1NRg9CVpcO4AeBrWb/pP7pJOXsimjHXtBrWeiyVRhLl2S84BJGtcejf91QXHBTWZnB8wChtLZlTZhmjK2FDZuVOvHQXN6GFEY1Ij05RXpSFBBBBYIESNBZAYSBaiKUCmE10KASHNQcgCsFtdCSIRSUpAIkxMlGCUJQCJv5DCWCgEAEpRKgyVJs2FxDQNXEAeZ0CiErU+z21FS8pyJDQXfDQfVPDTIeQ7gzruE2Io29OmPwtA+Sk0Xp9zVDmCnPPJdZ3dPkuD8SGbur+r7LuL9WnyXCeIXRdVf1lZjRWzoPsrP8ARf8AqK3JKxHstH9Bx/uctm+qshX2NupaoIi5BYBwxmK+G51WjwywdWY5weGho5gkoIJscU5Ux5ulozeIOk5Q8yDry+CK3ztjvFBBLJbCujR4O4ueI1WixXFSxuQb7IIIG9zOnEa7TLajh8FPtsTvDo2o6T4hEglthaBdVb7UGo7/AFN+xVpSpOp2jiSS6CTJnVBBB7NHs5Xc6knnJTSCCQ9Z9gQQQWMBBEgsZgKCCCIjDaicggj7gl0IlGAggiTiCEoIIIMdARkoIIhChdH9klp3qtY8oYPqfsiQRRzZ/tZ0h1WU1VcggmOMOs/uHyXCcb1uav6yggsGJ0H2avPYEf3FbN1REgsgPsLtEEEEQH//2Q=='>
+                    </div>
+                    <div>
+                        <h4> I try to challenge myself everyday. I try to code more, I try to workout more. I want to
+                            cross over my confort zone. If you dont succeed try to push up! </h4>
+                        <img class='modal-image'
+                             src='https://cdn.mos.cms.futurecdn.net/uBCpbhzJemEjVYcmWtDr8f-768-80.jpg'>
+                    </div>
+                </div>
+
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </body>
+</div>
+<div class="myModal" id="modal1">
+    <div class="modal-content" id="modal-content1">
+        <div class="modalMainContent">
+            <div class="modalColumn1">
+                <a href="#myProfile" style="text-decoration: none"><h5 class="modal-list-item"> Result Of The Tests</h5>
+                </a>
+                <a href="#personalityTest" style="text-decoration: none"><h5 class="modal-list-item"> Myers-Briggs
+                    Test</h5></a>
+                <a href="#learningStyleTest" style="text-decoration: none"><h5 class="modal-list-item"> Learning Style
+                    Test</h5></a>
+                <a href="#characteristicTest" style="text-decoration: none"><h5 class="modal-list-item"> Characteristic
+                    Test</h5></a>
+                <a href="#testConclusion" style="text-decoration: none"><h5 class="modal-list-item"> Conclusion </h5>
+                </a>
+                <a href="#influenceBehaviour" style="text-decoration: none"><h5 class="modal-list-item"> Influence
+                    Behaviour</h5></a>
+                <a href="#formingTeamConsideration" style="text-decoration: none"><h5 class="modal-list-item">
+                    Considerations </h5></a>
+
+            </div>
+            <div class="modalColumn2">
+                <div id="myProfile">
+                    <h2>
+                        Result Of The Tests:
+                    </h2>
+
+                    <div class="childrenContent">
+                        <div>
+                            <h3 id='personalityTest'> Myers-Briggs Test</h3>
+                            <img class='modal-image'
+                                 src='https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/72659129_1255159724678212_8045967496378843136_o.jpg?_nc_cat=103&_nc_oc=AQnMr7ug3LutDLnPYRkkoAWrPJzFU-FypmU92zUDhj439mQ_1rfQj9P69hXQ31kxLPs&_nc_ht=scontent.fsgn1-1.fna&oh=e8acd8e98a5ee9012b6f6e77f1ab84ce&oe=5E4B7862'>
+                            <p style='text-align: center;'> I am into 3% of population that have this personality
+                                :D </p>
+                            <h3 id='learningStyleTest'> Learning Style Test</h3>
+                            <img class='modal-image'
+                                 src='https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/72347790_1230908183770033_6619688516135682048_o.jpg?_nc_cat=104&_nc_oc=AQlyAcGaXqcVCHlE9qvCcfazwBYYe5W579CFzUcCuoqcQNxBqJ0ZzDUBzCIIWZzvPUI&_nc_ht=scontent.fsgn1-1.fna&oh=0a11f94b11928132971032fca0912fd7&oe=5E531907'>
+                            <p style='text-align: center;'> Oops! I can guess this result easily. However, the
+                                suggestions are quite good! :D </p>
+                            <h3 id='characteristicTest'> Characteristic Test</h3>
+                            <img class='modal-image'
+                                 src='https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/s960x960/72690860_1230908247103360_4615292949142437888_o.jpg?_nc_cat=111&_nc_oc=AQmmsauqqgI_p6_kSgzCBNwqyGWUIuCoE5NORnHcFse6TZkb-aoPVQO9I_ww1WTKskQ&_nc_ht=scontent.fsgn1-1.fna&oh=4b5fdb0d6267ad818dae8d8d26cd99c1&oe=5E568FFA'>
+                            <p style='text-align: center;'> The main point is: Everything is bellow the average :'< </p>
+                        </div>
+                        <div id='testConclusion'>
+                            <h3> Conclusion: </h3>
+                            <strong>After passing the test about my characteristics, I confirm that It is nearly true.
+                                According to the test results, I can easily assume that I have a rare personality which
+                                means that I have some unique perspectives and multi-edge observations when dealing with
+                                daily events and problems. It also said an impressive part of my strong points that I
+                                have unlimited creativity.
+                                <img src="https://live.staticflickr.com/6096/6250513028_b874eef6f1.jpg" alt=""
+                                     class="modal-image">
+                                <br>
+                                I can grasp and memorize algorithms, lessons or the essence
+                                of things quickly when I watch videos or images.
+                                <img src="data:image/jpeg;base64,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"
+                                     alt="" class="modal-image">
+                                <br>
+                                In the relevant team, I can work and
+                                dedicate with one hundred percent of my ability and enthusiasm. </strong>
+
+                            <strong>With this mindset, I am hardly be believed by others. More exactly, I merely share
+                                the opinions that are not fully developed. For example, I used to ask people what I do
+                                not know or what I cannot understand totally. Those questions will give negative
+                                emotions and thoughts to others about my real capacity. When it comes to team-work
+                                projects or tests, the others will have unsafe moods to give me important parts or
+                                coding features although my results are not bad.
+                                <img src="https://publicdomainvectors.org/photos/1547602033.png"
+                                     alt="" class="modal-image">
+                                <br>
+                                Another terrible thing about this kind
+                                of character is that the invisible fears of failure are the limitation of
+                                self-development. The EQ score of me is not very high. Every emotional self-control
+                                area is below average a little bit. People can easily read my thoughts or moods when
+                                they look at my face. 
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Universal_emotions7.JPG/1200px-Universal_emotions7.JPG"
+                                     alt="" class="modal-image">
+                                <br>
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+                <div id='influenceBehaviour'>
+                    <h3> Influence Of The Test Result In A Team: </h3>
+                    <strong> In a small team-working scale, those results help me to recognize the strengths and
+                        weaknesses. It changes my mind and behaviors a little bit. For instance, instead of asking
+                        to get information, I have to share my knowledge and my observations with my teammates as
+                        much as possible.
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Conference_%C2%B4Contemporary_Approaches_to_Learning_and_Teaching%C2%B4_%2836947941980%29.jpg/1200px-Conference_%C2%B4Contemporary_Approaches_to_Learning_and_Teaching%C2%B4_%2836947941980%29.jpg"
+                             alt="" class="modal-image">
+                        <br>
+                        Furthermore, learning a course about controlling emotions is actually
+                        necessary and important right now. Apart from that, setting particular rules (team
+                        agreement) at the very first time is the best key to avoid conflicts in the long run. 
+                        <img src="//live.staticflickr.com/8415/30027916875_af3f04625c_6k.jpg"
+                             alt="" class="modal-image">
+                    </strong>
+                </div>
+                <div id='formingTeamConsideration'>
+                    <h3> Considerations When Forming A Team: </h3>
+                    <strong> I should take into consideration the individuals who have "listening skill" (the most
+                        important), empathy, patient, transparency and self-commitment when forming a team because those
+                        requirements is the facilitator to boosting each team member's capacity in team-working
+                        scale. <br>
+                        <img src="https://www.publicdomainpictures.net/pictures/270000/velka/looking-for-new-opportunities.jpg"
+                             alt="" class="modal-image">
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="myModal" id="modal2">
+    <div class="modal-content" id="modal-content2">
+        <div class="modalMainContent">
+            <div class="modalColumn1">
+                <a href="#webDeveloper" style="text-decoration: none"><h5 class="modal-list-item"> Web Front-end
+                    Developer</h5>
+                </a>
+                <a href="#reasons" style="text-decoration: none"><h5 class="modal-list-item"> Why Web Developer?
+                    Test</h5></a>
+                <a href="#requirements" style="text-decoration: none"><h5 class="modal-list-item"> Requirements </h5>
+                </a>
+                <a href="#neededSkills" style="text-decoration: none"><h5 class="modal-list-item"> Current-Needed
+                    Skills</h5></a>
+                <a href="#Plan" style="text-decoration: none"><h5 class="modal-list-item"> My Plan </h5>
+                </a>
+
+            </div>
+            <div class="modalColumn2">
+                <div>
+                    <h2 class="modal-title" id="myJob">
+                        I Will Be A Front-end Web Developer
+                    </h2>
+                    <div>
+                        <div>
+                            <h3 style="border-bottom: 1px solid black; display: inline-block" id='webDeveloper'> 1. The
+                                general tasks of a Web Developer: </h3> <br>
+                            <strong style='text-align: center;' class="childrenContent">
+                                "Front-end developers work with languages that render
+                                in the browser, which is also called a client" (Linkedin.com, 2016).
+                                <br>
+                                <img class='modal-image'
+                                     src='https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/73422499_1232710903589761_4799057510063407104_n.jpg?_nc_cat=101&_nc_oc=AQnZxxqLRKULFFpKpc-nmdGZ9qUf6H5nxqjFN4lqTlONpzSr9WjWHLL88KeDlC_GGm4&_nc_ht=scontent.fsgn1-1.fna&oh=718a545fb61226e0052cfff7f567cdf6&oe=5E63326F'
+                                     alt="">
+                                <a href="https://bit.ly/33DDNgs" style="width: 100%"><p> Link </p></a>
+                                <br>
+                                Those developers have to ensure the layout of the websites in order to provide customers
+                                a readable, relevant, and beautiful websites.
+                                <img class='modal-image'
+                                     src='https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/72580587_1233185783542273_7906352703884754944_o.jpg?_nc_cat=111&_nc_oc=AQmv9XvLkE07dFodZXiWd32niv7OrTO3mv8bTG-nRr4yXDzXwauRHJEoIaYUIrEDo5E&_nc_ht=scontent.fsgn1-1.fna&oh=ecffb468a4d6305f1cb1abf0ce63b35e&oe=5E490978'
+                                     alt="">
+                                <a href="http://bit.ly/2BiPFID" style="width: 100%"><p> Link </p></a>
+                                <br>
+                                Besides, they have to claim that the websites can provide a host of Browers and devices
+                                which have different screen sizes.
+                                <br>
+                                <img class="modal-image"
+                                     src="https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/72690014_1233189510208567_4112310389964800000_o.jpg?_nc_cat=106&_nc_oc=AQl2QlUVhbs3dYTFnlAfoCHlhyD3xfBQFPYs9WDApJo378kFKOPfD0sgCy8sEzvQUjg&_nc_ht=scontent.fsgn1-1.fna&oh=5f5536b9d791ab6a093fb0b7406367d6&oe=5E4A412A">
+                                <a href="https://bit.ly/2nVCiuX" style="width: 100%"><p> Link </p></a>
+                            </strong>
+
+                        </div>
+                        <div>
+                            <h3 id='reasons' style="border-bottom: 1px solid black; display: inline-block"> 2.Why
+                                Front-end Web Developer? </h3><br>
+                            <strong>
+                                When it comes to the social context, the demand for having a website is
+                                ever-growing. In my perspective, individuals need their websites to market themselves.
+                                Likewise, Operations, companies, organizations need their websites or web apps to find
+                                potential customers, introduce their new products, sell their items, provide their
+                                service, etc. So, the number of sites is increasing day by day. It is the primary reason
+                                that proves having a job in the web filed is trending.
+                                <img src="./img/RmitImage.jpg" alt="RmitSurveyImage"
+                                     class="modal-image">
+                            </strong>
+                            <p style="text-align: center"> (Source: RMIT University (COSC2083, 2019))
+                            </p>
+                            <strong>
+                                Another motive comes from the constantly changes in the web-design styles and frameworks
+                                which require web front-end learning continuously to keep up with the time. Meanwhile,
+                                Web front-end developers have to learn every time. This struggle encouraged me who do
+                                not like something stable.
+                                <img src="https://hackernoon.com/hn-images/1*raWO3dhM4jMjf9VY-kZzNg.png"
+                                     class="modal-image">
+                                <br>
+                            </strong>
+                            <strong>Individually speaking, via my personality test result, I recognize the strong
+                                points of myself, such as patient, creativity, and intense enthusiasm. Those
+                                characteristics demonstrate that the front-end field is more suitable for me than be
+                                a back-end developer. I am a visual learner, and I like watching science fiction
+                                movies that have fancy, vivid, and magnificent animations. I could sit in front of
+                                computer hour by hour to create just an interesting animation by JavaScript and CSS.
+                                <img src="https://i.kym-cdn.com/entries/icons/original/000/005/635/63e51038_f4b0_682c.jpg"
+                                     alt="" class="modal-image">
+                                <br>
+                                In my mind, I keep the mindset that is zero or one hundred, not between. It was then
+                                followed that my previous done tasks were perfect, clear and clean. As a flow of
+                                thought, I guess I am suitable to be a front-end web developer.
+                                <img src="https://cdn5.vectorstock.com/i/1000x1000/51/34/the-king-crown-vector-20625134.jpg"
+                                     alt="" class="modal-image">
+                                <br>
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+                <div id='requirements'>
+                    <h3 style="border-bottom: 1px solid black; display: inline-block" id="'requirements"> 3. Skills,
+                        qualifications, and
+                        experience requirements: </h3>
+                    <h4> 3.1 Hard skills: </h4>
+                    <strong> HTML stands for HyperText Markup Language. In this language, each element will be stored
+                        within open and close tags and have its properties. We can easily control each element like a
+                        node in Object-Oriented Programming. Every web developer must know this language.
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"
+                             alt="" class="modal-image">
+                        <br>
+                        CSS stands for Cascading Style Sheets. Generally, there a two primary missions of CSS files.
+                        Firstly, It identifies the style of each element, such as color, background color, font family,
+                        opacity, etc. Another one is setting up the priority of each element and modify the original
+                        preference. There are several methods to control the display of the layout such as Flexbox,
+                        grid, or classes of bootstrap 4. CSS is a complicated programming language. However, it is
+                        necessary to build the first foundation.
+                        <img src="https://www.tutorialrepublic.com/lib/images/css-illustration.png"
+                             alt="" class="modal-image">
+                        <br>
+                        The majority of web developers are familiar with JavaScript language because of this utility.
+                        JavaScript can get particular elements quickly, and then It can handle and modify the attributes
+                        of this element. Front-End Developers can handle the event by JavaScript. So, JavaScript can
+                        execute the events and interact well with tags in the HTML files.
+                        <img src="https://nadia-training.com/wp-content/uploads/2019/03/JavaScript-Essentials-Course.jpg"
+                             alt="" class="modal-image">
+                        <br>
+                        Responsive Web Design: Nowadays, more and more electronic devices are invented. This phenomenon
+                        comes with an increment of number screen sizes using to access websites. Front-end developers
+                        play a vitally important role in design websites whose display is relevant to different sizes of
+                        various devices.
+                        <img src="https://miro.medium.com/max/2168/1*qF8LfAwUhl57g9T0BVvVdg.jpeg"
+                             alt="" class="modal-image">
+                        <br>
+                        JS Front-end Frameworks: To boost the performance of websites, scale up the projects as well as
+                        make readable code.JS Front-end Frameworks such as Vue, React, or Angular should be considered.
+                        <br>
+                        <img src="https://image.slidesharecdn.com/latestjavascriptmvcfrontendframeworks2017-161230112400/95/latest-javascript-mvc-front-end-frameworks-2017-1-638.jpg?cb=1483097382"
+                             alt="" class="modal-image">
+                    </strong>
+                    <h4>3.2 Soft skills: </h4>
+                    <strong>
+                        Team working skills: Learning how to work with people who have different personalities and
+                        working styles is the mandatory requirement of almost company in order to scale up projects.<br>
+
+                        Choosing relevant documentations and reading skills: As a person, it is too difficult to obtain
+                        the world’s knowledge. Choosing right learning materials and constant reading them.
+                        <br>
+                        <img src="https://5.imimg.com/data5/MX/RL/MY-14863115/soft-skills-training-500x500.jpg"
+                             alt="" class="modal-image">
+                        <br>
+                        Attitude self-awareness: controlling the attitude toward colleagues, learning and achievements
+                        is really necessary to always go ahead in the career ladder. This skill can define how long and
+                        how far you can move in the road to success.<br>
+
+                        English communication: working in international companies and enterprises English is highly
+                        potential selected to become a requirement of employees. English is also considered as the
+                        compulsory language to work with people in other parts of the world.
+                    </strong>
+                    <h4>3.3 Qualifications: </h4>
+                    <strong>
+                        Education Background: Almost those companies require the employees having a Bachelor's Degree in
+                        Computer Science, Computer Engineering, or other related Bachelor’s <br>
+                        Degrees. Other certificates are plus.
+                        <br>
+                        <img src="https://www.urbanedjournal.org/sites/default/files/inline-images/bachelor-degree-programs.jpg"
+                             alt="" class="modal-image">
+                    </strong>
+                    <h4> 3.4 Experience: </h4>
+                    <strong>
+                        Those companies nearly do not need newbie. They recruit people having experience in the
+                        workplace from one to three years for Junior positions and from three to five years for Senior
+                        positions.
+                        <br>
+                        <img src="https://www.onlinembareport.com/files/styles/large/public/images/work-experience.png"
+                             alt="" class="modal-image">
+                    </strong>
+                </div>
+                <h3 style="border-bottom: 1px solid black; display: inline-block" id="neededSkills"> 4. Skills,
+                    qualifications, and
+                    experience that I current need: </h3>
+                <h4>4.1 Self-reflection: </h4>
+                <strong>
+                    In my gap year to learn English to be accepted to RMIT University, I had read several books about
+                    control my emotions, working effectively in a team following SCRUM method. So, I can confidently
+                    claim that my soft skills are acceptable.
+                    <br>
+                    <img src="http://www.thebluediamondgallery.com/handwriting/images/achievement.jpg"
+                         alt="" class="modal-image">
+                    <br>
+                    Before this semester (Semester C 2019), I had some opportunities to learn how to code HTML, CSS,
+                    JavaScript, Git and Python. I think I am in my high-beginner level in the first three ones of hard
+                    skill requirements.
+                    I got the Basic Responsive Web Design Certificate in Free Code Camp, which is a useful website to
+                    learn CSS.
+                </strong>
+                <h4> 4.2 Current needs: </h4>
+                <strong>
+                    HTML: I should learn how to group and separate the layout faster. <br>
+                    CSS: I should learn the CSS grid instead of Flexbox. Apply some CSS frameworks like bootstraps
+                    4.<br>
+                    JavaScript: Dig deeper into promise and function named "setTimeOut". Apart from that, I should learn
+                    how to cache the I/O data to save the memory of computers. Calling APIs is also an important aspect
+                    needed to learn. "typejs" should be taken into account.<br>
+                    JS Front-end Frameworks: High productivity steams from Front-end framework. So, React, or AngularJS
+                    are essential things.<br>
+                    Knowledge about Web security and operation system.<br>
+                    Data base and Real-time Data base.<br>
+                    Improve Hosting and Cloud knowledge.
+                    <br>
+                    <img src="//live.staticflickr.com/7387/9520346365_698b8acb2e_c.jpg"
+                         alt="" class="modal-image">
+                    <br>
+                    Education Background: To get a ticket to interview session, A Bachelor's Degree guarantees my
+                    impression to employers. <br>
+                    Experience: Before being selected as a Senior employee of a company, I should do an internship and
+                    then being a fresher to broaden my horizons.
+                </strong><br>
+                <h3 style="border-bottom: 1px solid black; display: inline-block" id="Plan"> 5. Plan to get the
+                    goal: </h3>
+                <h4>5.1 Short-term plan: </h4>
+                <h5>5.1.1 Plan to improve soft skills: </h5>
+                <strong>
+                    English communication skills: Using English to communicate with friends, teammates, go to
+                    Toastmaster International clubs at the weekends to improve communication and presentation skills.
+                    <br>
+                    <img src="https://media.defense.gov/2017/Oct/16/2001827579/780/780/0/171012-F-IA865-0010.JPG"
+                         alt="" class="modal-image">
+                    <br>
+                    Team Working Skills: Using LinkedIn Learning to find suitable courses to improve the abilities
+                    needed in team working. Additionally, Using trello.com, or Sharepoint.
+                    <br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Trello_logo.png"
+                         alt="" class="modal-image">
+                    <br>
+                    (https://rmiteduau.sharepoint.com) to manage the task in a group. Which regards coding projects,
+                    doing deep research into how to use GitHub, or GitLab to separate features of the projects, merging
+                    the features, and rebase them clearly.
+                    <br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/768px-Git-logo.svg.png"
+                         alt="" class="modal-image">
+                    <br>
+                    HTML, CSS, and JavaScript: There is no way better than learning by practices. Asking the teachers
+                    and
+                    friends , or finding in the internet about real projects to improve that field. Every month, I
+                    should
+                    finish a small web project.
+
+                    JS Frameworks: I will find the physical books in the RMIT library to learn this aspect, search the
+                    related documentation by https://scholar.google.com/ or find the online courses in Lynda.com, etc.
+                    Every
+                    week, I try to read a book containing this aspect.
+                    <br>
+                </strong>
+                <h5>5.1.2 Plan to enhance Hard skills: </h5>
+                <br>
+                <strong>
+                    HTML, CSS, and JavaScript: There is no way better than learning by practices. Asking the teachers
+                    and friends , or finding in the internet about real projects to improve that field. Every month, I
+                    should finish a small web project.
+                    <img src="//live.staticflickr.com/6159/6253368421_88fc4c9df7_b.jpg"
+                         alt="" class="modal-image">
+                    <br>
+                    JS Frameworks: I will find the physical books in the RMIT library to learn this aspect, search the
+                    related documentation by https://scholar.google.com/ or find the online courses in Lynda.com, etc.
+                    Every week, I try to read a book containing this aspect.
+                    <br>
+
+                </strong>
+                <h5>5.1.3 Plan to get good qualifications: </h5>
+                <br>
+                <strong>
+                    Always having preparations and understand the given slides before coming to class. <br>
+                    Read a bunch of references and use them carefully in the report.<br>
+                    Participating in the class's activities energetically.<br>
+                </strong>
+                <br>
+                <h5>5.1.4 Plan to get more experience:</h5>
+                <br>
+                <strong>
+                    In the middle or the end of the second year at RMIT University, I will reduce my subjects to 2 and
+                    try to find a part-time internship opportunity. In this way, I assume I will get a few experiences
+                    before graduation.
+                </strong>
+                <br> <br>
+                <h4>5.2 Long-term plan: </h4>
+                <br>
+                <strong>
+                    The plans are meaningless if we do not do particular actions. My plan to get this competitive job is
+                    doing all the basic things bellow at the same time in the long run:<br>
+
+                    Be consistency, having self-commitment and stay confident: The most important thing.<br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/ACT_Psychological_flexibility_vs_inflexibility.png"
+                         alt="" class="modal-image">
+                    <br>
+                    Get a good grade by all legal means: In a specific environment, If I can learn well. It means in
+                    other environments, and I can perform either. The employers will be impressed by this one.<br>
+                    Learning as much as possible: RMIT University provided its students an enormous number of learning
+                    sources such as physical books in the library, lynda.com website, e-books on RMIT library website,
+                    staff, and fellow students. There are actually changes as well as challenges of each RMIT student!
+                    <br>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Learning.svg/1200px-Learning.svg.png"
+                         alt="" class="modal-image">
+                    <br>
+                    Do outside activities: Clubs and Organizations in RMIT welcome students to participate in their
+                    activities and events. In those processes, you will be trained essential soft skills and make new
+                    friends.
+                    <br>
+                </strong>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="myModal" id="modal3">
+    <div class="modal-content" id="modal-content3">
+        <div class="modalMainContent">
+            <div class="modalColumn1">
+                <a href="#myProfile" style="text-decoration: none"><h5 class="modal-list-item"> Result Of The Tests</h5>
+                </a>
+                <a href="#personalityTest" style="text-decoration: none"><h5 class="modal-list-item"> Myers-Briggs
+                    Test</h5></a>
+                <a href="#learningStyleTest" style="text-decoration: none"><h5 class="modal-list-item"> Learning Style
+                    Test</h5></a>
+                <a href="#characteristicTest" style="text-decoration: none"><h5 class="modal-list-item"> Characteristic
+                    Test</h5></a>
+                <a href="#testConclusion" style="text-decoration: none"><h5 class="modal-list-item"> Conclusion </h5>
+                </a>
+                <a href="#influenceBehaviour" style="text-decoration: none"><h5 class="modal-list-item"> Influence
+                    Behaviour</h5></a>
+                <a href="#formingTeamConsideration" style="text-decoration: none"><h5 class="modal-list-item">
+                    Considerations </h5></a>
+
+            </div>
+            <div class="modalColumn2">
+                <div>
+                    <h2>
+                        My Project Ideal
+                    </h2>
+
+                    <div>
+                        <div id='overview' class="childrenContent">
+                            <h3> Overview: </h3>
+                            <strong>The environment campaign is always considered by every people. My project is making
+                                a website contains the environment information, articles, e-news. Furthermore, To give
+                                the green organization a solution that can resolve the battery pollution problems.
+                                My web application uses free APIs service about environment news to upload itself
+                                constantly. The writers also upload their knowledge and campaign to share the
+                                information about the current conditions of our environment or call other users to give
+                                a helping hand for their following environmental campaign
+                                <br>
+                                <img src="//live.staticflickr.com/136/345146792_deef2e1c37_b.jpg" alt=""
+                                     class="modal-image">
+                                <br> </strong>
+                        </div>
+                        <div id="myMotivation">
+                            <h3> Motivation: </h3>
+                            <strong>
+                                1.Batteries are small, easy to collect but It caused a huge damage for our environment
+                                as
+                                well as the health of human. <br>
+
+                                According to <a href="http://www.batterycompany.co.uk/" target="_blank">
+                                http://www.batterycompany.co.uk/ </a>, There are 660 million batteries bought each
+                                year
+                                in the UK, that’s an average of 21 per household. <br>
+                                Likewise, The money spend on batteries up to 5 million dollars each week but 98% of
+                                them
+                                was not recycled.
+                                <br>
+                                2.Batteries contain the heavy metals that can easily pollute water. If people drink
+                                this
+                                water, those heavy metals directly influence the human health.
+                                <br>
+                                3.Batteries can cause huge damage but easy to collect. This reason motivated me to
+                                make an
+                                web app that can
+                                give a solution for this problem.
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Battery_recycling.jpg/1200px-Battery_recycling.jpg"
+                                     alt="" class="modal-image">
+                                <br>
+                            </strong>
+                        </div>
+                    </div>
+                    <div id="Description ">
+                        <h3> Description: </h3>
+                        <strong>
+                            My web app have several features for people who concern environmental problems <br>
+                            1. We have a homepage that people can read the newspaper and the information about the
+                            current conditions of our environment. They can comment, like, share their knowledge
+                            ,and give their opinion. This homepage take information from some APIs server and
+                            reload itself every 15 minutes. <br>
+                            2. The Page that connects with angel investors, advertise and sell the
+                            products of those brands to make a fund for operation.<br>
+                            3. The Login feature:
+                            With users: My flatform can give a form to customers. Users have a responsibility to
+                            fill the form about their location, their number of batteries. My web app will return
+                            the nearest collecting places. <br>
+                            With connected organizations: They can see how many batteries in each store and set up a
+                            plan to gather.<br>
+                            4. Collecting places: Firstly, We guidance citizens on how to save the batteries. (like
+                            this images :D :D :D) I will choose and connect with specific convenient stores. People
+                            can give their batteries which were out of energy to those places. We also connect with
+                            a particular green organization to have needed facilities and policies.
+                            <br>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Battery_recycling.jpg/1200px-Battery_recycling.jpg"
+                                 alt="" class="modal-image">
+                            <br>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="myModal" id="modal4">
+    <div class="modal-content" id="modal-content4">
+        <div class="modal-layout">
+            <div class="modal-list">
+                <h5 class="modal-list-item">Basic Detail</h5>
+                <h5 class="modal-list-item">Facts</h5>
+            </div>
+            <div class="modal-list-content">
+                <div id="basic-information">
+                    <h1>
+                        Basic Information:
+                    </h1>
+                    <div>
+                        <div class="childrenContent">
+                            <h3 class="modal-first-content"> My Name:</h3>
+                            <p class='modal-second-content'>Vo Gia Bao - Bee ( a kind of insect)</p>
+                        </div>
+                        <p>s3823477</p>
+                        <p>s3823477@rmit.edu.vn or vogiabao292@gmail.com</p>
+                        <p>Viet Nam</p>
+                        <p>Vietnamese and English</p>
+                        <p>
+                            I am feeding a dog. Her breed is Shih Tzu. I love she very much
+                            :D. We have been companions for a long time :D
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
